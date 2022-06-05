@@ -2,6 +2,7 @@ import styled from "styled-components/native";
 import { TextInput, Text } from "react-native";
 
 export const Container = styled.SafeAreaView`
+  
   background: #fff;
   justify-content: center;
   align-items: center;
@@ -21,7 +22,9 @@ export const NameEventInput = styled.View`
   margin: 10px auto;
 `;
 
-export const TextLabel = styled(Text)``;
+export const TextLabel = styled(Text)`
+  color: #000;
+`;
 
 export const NameInput = styled(TextInput)`
   height: 45px;
@@ -82,13 +85,12 @@ export const ToInput = styled(TextInput)`
 export const NewDescription = styled.View`
   height: 116px;
   width: 100%;
-  border: 1px solid #333;
-  padding-left: 10px;
-`;
+  `;
 
 export const DescriptionInput = styled(TextInput)`
-  width: 100%;
-  height: 100%;
+  border: 1px solid #333;
+  height: 97px;
+  
 `;
 
 export const CustomButton = styled.TouchableOpacity`
