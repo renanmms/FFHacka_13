@@ -1,18 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Button, TextInput} from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button, TextInput, TouchableOpacity} from 'react-native';
 import { FlatList, SectionList } from 'react-native-web';
 import { Container, styles, TextTitle, SubTextTitle, UserInfo, EventInfo, EventItem, TimeContainer, DetailsContainer, StarsContainer, EventText, Filter, AddEvent} from './styles';
 import { List, UsersFour, Star, Funnel, PlusCircle} from 'phosphor-react-native';
+import MainHeader  from '../../components/MainHeader';
 
 
 export function HomeView()
 {
     return(
         <Container>
-            <UserInfo>
-                <TextTitle>Home</TextTitle>
-                <List />
-            </UserInfo>
+            <MainHeader title={"Home"} />
 
             <EventInfo>
                 <UsersFour />
@@ -104,10 +102,9 @@ export function HomeView()
 
                 <AddEvent>
                     <PlusCircle />
-                    <Button title='Adicionar evento'>
-                        
-                    </Button>             
-
+                    <TouchableOpacity>
+                        <EventText>Adicionar evento</EventText>
+                    </TouchableOpacity>             
                 </AddEvent>
         </Container>
     );

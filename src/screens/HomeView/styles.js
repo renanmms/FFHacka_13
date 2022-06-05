@@ -28,7 +28,7 @@ export const UserInfo = styled.View`
     align-items: center;
 `;
 
-export const EventItem = styled.View`
+export const EventItem = styled.TouchableOpacity`
     flex-direction: row;
     padding: 10px;
     margin: 10px;
@@ -65,11 +65,7 @@ export const Filter = styled.View`
 `;
 
 export const AddEvent = styled.View`
-
-    text-align: center;
-`;
-
-export const AddEventButton = styled.Button`
-    
+    flex-direction: row;
+    justify-content: center;
 `;
 
