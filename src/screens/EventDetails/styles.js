@@ -9,8 +9,9 @@ export const Container = styled.SafeAreaView`
 `;
 
 export const MainContainer = styled.View`
-    margin: 24px;
+    margin: 0 24px  24px  24px;
 `;
+
 export const Header = styled.View`
     /* background-color: gray; */
     width: 100%;

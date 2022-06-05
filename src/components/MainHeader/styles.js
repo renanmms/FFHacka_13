@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.SafeAreaView`
     width: 100%;
-    margin-bottom: 24px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    /* padding: 24px; */
 `;
 
 export const Title = styled.Text`

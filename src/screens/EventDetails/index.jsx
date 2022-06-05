@@ -8,7 +8,7 @@ const EventDatails = () => {
     return (
         <Container>
             <MainContainer>
-                <MainHeader title="Evento" />
+                <MainHeader title={"Evento"} />
 
                 <Header>
                     <Title>Nome do Evento</Title>
