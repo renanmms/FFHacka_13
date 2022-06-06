@@ -1,13 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { View } from 'react-native';
-import EventDatails from './src/screens/EventDetails';
+import { Container } from './src/Styles/globals';
+import AddEvent from './src/Screens/AddEvent';
+import EventDatails from './src/Screens/EventDetails';
 
 export default function App() {
   return (
-    <View>
-      <EventDatails />
+    <Container>
+      <AddEvent />
       <StatusBar style="auto" />
-    </View>
+    </Container>
   );
 }
-
+ 
